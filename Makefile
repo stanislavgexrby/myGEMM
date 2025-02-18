@@ -23,6 +23,8 @@ ENABLE_CUDA = 1
 
 # ==================================================================================================
 
+ENABLE_CUDA=0
+
 # Compilers
 CXX = g++
 NVCC = nvcc
@@ -42,6 +44,9 @@ SCRDIR = scripts
 ifeq ($(ENABLE_CUDA),1)
 	DEFINES += -DENABLE_CUDA
 endif
+
+KERNEL ?= 8
+DEFINES+=-DKERNEL=$(KERNEL)
 
 # Load OpenCL and the clBlas library
 INCLUDES += -I$(OPENCLDIR)/include -I$(CLBLASDIR)/include

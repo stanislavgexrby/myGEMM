@@ -94,10 +94,18 @@ void myclblas(float* A, float* B, float* C,
     free(header);
     free(source);
 
+    // kernel define for compiler
+    char compiler_options[100] = {0};
+    sprintf(compiler_options, "-DKERNEL=%d", KERNEL);
+
+    printf("KERNEL: %d\n", KERNEL);
+    printf("options: %s\n", compiler_options);
+
     // Compile the kernel file
     program = clCreateProgramWithSource(context, 1, &constCode, NULL, &err);
     checkError(err,__LINE__);
-    err = clBuildProgram(program, 0, NULL, COMPILER_OPTIONS, NULL, NULL);
+    err = clBuildProgram(program, 0, NULL, compiler_options, NULL, NULL);
+    checkError(err,__LINE__);
 
     // Check for compilation errors
     size_t logSize;
@@ -144,6 +152,7 @@ void myclblas(float* A, float* B, float* C,
     // Configure the myGEMM kernel
     char kernelname[100];
     sprintf(kernelname, "myGEMM%d", KERNEL);
+    printf(kernelname);
     cl_kernel kernel1 = clCreateKernel(program, kernelname, &err);
     checkError(err,__LINE__);
 

@@ -16,6 +16,8 @@
 // Common include
 #include "common.h"
 
+#include "settings.h"
+
 // Global variable with timing results
 profile_t timers[NUM_TIMERS];
 
@@ -25,6 +27,8 @@ profile_t timers[NUM_TIMERS];
 // different types of BLAS libraries. It also computes the error rate in terms of the L2-norm with
 // respect to cuBLAS (the 'golden' reference).
 int main(int argc, char* argv[]) {
+
+   printf("KERNEL = %d\n", KERNEL);
 
     // Start of the function
     printf("\n##\n");
@@ -79,7 +83,7 @@ int main(int argc, char* argv[]) {
         #ifdef ENABLE_CUDA
             libcublas(A, B, goldC, k, m, n, NUM_TIMERS-1);
         #else
-            libclblas(A, B, goldC, k, m, n, NUM_TIMERS-1);
+            // libclblas(A, B, goldC, k, m, n, NUM_TIMERS-1);
         #endif
 
         // Loop over the configurations
@@ -103,6 +107,7 @@ int main(int argc, char* argv[]) {
                 case 2: sprintf(name, "myGEMM.cu"); break;
                 case 3: sprintf(name, "myGEMM.cl"); break;
             }
+	    // if (c == 3) continue;
 
             // Perform the matrix-multiplication
             switch(c) {

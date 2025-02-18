@@ -21,6 +21,30 @@
 
 // =================================================================================================
 
+int get_free_mem() {
+  system("awk '/MemAvailable/ {print $2}' /proc/meminfo > mem.txt");
+
+  FILE *f = fopen("mem.txt", "r");
+  int memory;
+  fscanf(f, "%d", &memory);
+  fclose(f);
+
+  return memory / 1024;
+}
+
+void print_vmem(void) {
+  cl_platform_id platform;
+  cl_device_id device;
+  cl_ulong global_mem_size;
+
+  clGetPlatformIDs(1, &platform, NULL);
+  clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, 1, &device, NULL);
+  clGetDeviceInfo(device, CL_DEVICE_GLOBAL_MEM_SIZE, sizeof(cl_ulong), &global_mem_size, NULL);
+
+  printf("vmem: %d / %d\n", get_free_mem(), global_mem_size / (1024 * 1024));
+}
+
+
 // Matrix-multiplication using the clBlas library. This function copies the input matrices to the
 // GPU, runs SGEMM, and copies the output matrix back to the CPU.
 void libclblas(float* A, float* B, float* C,
@@ -53,6 +77,9 @@ void libclblas(float* A, float* B, float* C,
     // Configure clBlas
     err = clblasSetup();
 
+    print_vmem();
+    int mem = get_free_mem();
+
     // Prepare OpenCL memory objects
     cl_mem bufA = clCreateBuffer(ctx, CL_MEM_READ_ONLY, M*K*sizeof(*A), NULL, &err);
     cl_mem bufB = clCreateBuffer(ctx, CL_MEM_READ_ONLY, K*N*sizeof(*B), NULL, &err);
@@ -72,10 +99,13 @@ void libclblas(float* A, float* B, float* C,
                       1, &queue, 0, NULL, &event);
     err = clWaitForEvents(1, &event);
 
+    printf("buffers size: %d\n", mem - get_free_mem());
+    print_vmem();
+
     // Start the timed loop
     double startTime = timer();
     for (int r=0; r<NUM_RUNS; r++) {
-
+    
         // Call clBlas
         err = clblasSgemm(clblasColumnMajor, clblasNoTrans, clblasNoTrans,
                           M, N, K, ALPHA,
@@ -83,7 +113,7 @@ void libclblas(float* A, float* B, float* C,
                           bufB, 0, K, BETA,
                           bufC, 0, M,
                           1, &queue, 0, NULL, &event);
-
+    
         // Wait for calculations to be finished
         err = clWaitForEvents(1, &event);
     }

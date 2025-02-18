@@ -1,0 +1,18 @@
+./bin/myGEMM
+KERNEL = 6
+
+##
+## --- Configurations ---
+##    clBlas on 'Tesla K40m', peak: 4291.2 GFLOPS
+## myGEMM.cl on 'Tesla K40m', peak: 4291.2 GFLOPS
+##
+## --- 1024x1024x1024 ---
+vmem: 2953 / 3803
+buffers size: 17
+vmem: 2936 / 3803
+## [   clBlas]  0.201 s -->   10.7 GFLOPS ( 0%), L2 norm: 4.12e+03
+KERNEL: 6
+options: -DKERNEL=6
+myGEMM6## [myGEMM.cl]  9.149 s -->    0.2 GFLOPS ( 0%), L2 norm: 2.62e+05
+##
+
