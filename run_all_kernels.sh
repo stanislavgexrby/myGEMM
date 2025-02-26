@@ -1,6 +1,6 @@
 mkdir -p results
 
-for (( i=6; i<=10; i++ ))
+for (( i=1; i<=11; i++ ))
 do
 	make clean
 	make build KERNEL=$i

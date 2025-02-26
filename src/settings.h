@@ -33,12 +33,12 @@
 #define WIDTH 4                      // The vector-width (in number of floats)
 
 // Constants for kernel 5
-#define TSDK 16                      // The tile-size in dimension K (for kernel 5 only)
+#define TSDK 8                      // The tile-size in dimension K (for kernel 5 only)
 #define LPT ((TSDK*WPT)/(TS))        // The amount of loads-per-thread (assume TSN==TSM)
 
 // Constants for kernels 6 -- 10
-#define TSM 128                      // The tile-size in dimension M
-#define TSN 128                      // The tile-size in dimension N
+#define TSM 32                      // The tile-size in dimension M
+#define TSN 32                      // The tile-size in dimension N
 #define TSK 16                       // The tile-size in dimension K
 #define WPTM 8                       // The amount of work-per-thread in dimension M
 #define WPTN 8                       // The amount of work-per-thread in dimension N
