@@ -7,12 +7,30 @@ KERNEL = 2
 ## myGEMM.cl on 'Tesla K40m', peak: 4291.2 GFLOPS
 ##
 ## --- 1024x1024x1024 ---
-vmem: 2951 / 3803
-buffers size: 15
-vmem: 2936 / 3803
-## [   clBlas]  0.203 s -->   10.6 GFLOPS ( 0%), L2 norm: 4.10e+03
+vmem: 2668 / 3803
+buffers size: 16
+vmem: 2651 / 3803
+## [   clBlas]  0.235 s -->    9.2 GFLOPS ( 0%), L2 norm: 4.17e+03
 KERNEL: 2
 options: -DKERNEL=2
-myGEMM2## [myGEMM.cl]  1.114 s -->    1.9 GFLOPS ( 0%), L2 norm: 2.62e+05
+myGEMM2## [myGEMM.cl]  1.101 s -->    1.9 GFLOPS ( 0%), L2 norm: 2.62e+05
+##
+## --- 2048x2048x2048 ---
+vmem: 2588 / 3803
+buffers size: 48
+vmem: 2540 / 3803
+## [   clBlas]  0.264 s -->   65.0 GFLOPS ( 2%), L2 norm: 4.09e+03
+KERNEL: 2
+options: -DKERNEL=2
+myGEMM2## [myGEMM.cl]  8.769 s -->    2.0 GFLOPS ( 0%), L2 norm: 1.05e+06
+##
+## --- 4096x4096x4096 ---
+vmem: 2406 / 3803
+buffers size: 202
+vmem: 2204 / 3803
+## [   clBlas]  2.340 s -->   58.7 GFLOPS ( 1%), L2 norm: 4.12e+03
+KERNEL: 2
+options: -DKERNEL=2
+myGEMM2## [myGEMM.cl] 72.810 s -->    1.9 GFLOPS ( 0%), L2 norm: 4.19e+06
 ##
 

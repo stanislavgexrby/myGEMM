@@ -53,13 +53,11 @@ int main(int argc, char* argv[]) {
 
     // Loop over the different input/output matrix sizes
     for (int size=MINSIZE; size<=MAXSIZE; size=size*2) {
-
         // Set the performance counters to zero
         for (int t=0; t<NUM_TIMERS; t++) {
             timers[t].t = 0.0;
             timers[t].kf = 0;
         }
-
         // Set the matrices to be squared (change this to get rectangular matrices)
         const int k = size;
         const int m = size;
@@ -107,6 +105,7 @@ int main(int argc, char* argv[]) {
                 case 2: sprintf(name, "myGEMM.cu"); break;
                 case 3: sprintf(name, "myGEMM.cl"); break;
             }
+	    // if (c == 1) continue;
 	    // if (c == 3) continue;
 
             // Perform the matrix-multiplication
