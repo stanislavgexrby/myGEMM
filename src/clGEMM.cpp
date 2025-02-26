@@ -95,11 +95,11 @@ void myclblas(float* A, float* B, float* C,
     free(source);
 
     // kernel define for compiler
-    char compiler_options[100] = {0};
-    sprintf(compiler_options, "-DKERNEL=%d", KERNEL);
+    char compiler_options[1000] = {0};
+    sprintf(compiler_options, "-DKERNEL=%d -DTS=%d -DTSM=%d -DTSN=%d", KERNEL, TS, TSM, TSN);
 
-    printf("KERNEL: %d\n", KERNEL);
-    printf("options: %s\n", compiler_options);
+    // printf("KERNEL: %d\n", KERNEL);
+    // printf("options: %s\n", compiler_options);
 
     // Compile the kernel file
     program = clCreateProgramWithSource(context, 1, &constCode, NULL, &err);
@@ -152,7 +152,7 @@ void myclblas(float* A, float* B, float* C,
     // Configure the myGEMM kernel
     char kernelname[100];
     sprintf(kernelname, "myGEMM%d", KERNEL);
-    printf(kernelname);
+    // printf(kernelname);
     cl_kernel kernel1 = clCreateKernel(program, kernelname, &err);
     checkError(err,__LINE__);
 

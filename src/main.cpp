@@ -28,28 +28,28 @@ profile_t timers[NUM_TIMERS];
 // respect to cuBLAS (the 'golden' reference).
 int main(int argc, char* argv[]) {
 
-   printf("KERNEL = %d\n", KERNEL);
+   printf("KERNEL = %d, TS = %d, TSM = %d, TSN = %d\n", KERNEL, TS, TSM, TSN);
 
     // Start of the function
-    printf("\n##\n");
+    // printf("\n##\n");
     srand(time(NULL));
 
     // Compute the peak performance of the GPU
     double peak = GPU_CLOCK * GPU_CORES * GPU_MOD;
 
     // Print information about the different configurations
-    printf("## --- Configurations ---\n");
-    for (int c=0; c<=3; c++) {
-        #ifndef ENABLE_CUDA
-            if (c == 0 || c == 2) { continue; }
-        #endif
-        switch(c) {
-            case 0: printf("##    cuBLAS on '%s', peak: %.1lf GFLOPS\n", GPU_NAME, peak); break;
-            case 1: printf("##    clBlas on '%s', peak: %.1lf GFLOPS\n", GPU_NAME, peak); break;
-            case 2: printf("## myGEMM.cu on '%s', peak: %.1lf GFLOPS\n", GPU_NAME, peak); break;
-            case 3: printf("## myGEMM.cl on '%s', peak: %.1lf GFLOPS\n", GPU_NAME, peak); break;
-        }
-    }
+    // printf("## --- Configurations ---\n");
+    // for (int c=0; c<=3; c++) {
+    //     #ifndef ENABLE_CUDA
+    //         if (c == 0 || c == 2) { continue; }
+    //     #endif
+    //     switch(c) {
+    //         case 0: printf("##    cuBLAS on '%s', peak: %.1lf GFLOPS\n", GPU_NAME, peak); break;
+    //         case 1: printf("##    clBlas on '%s', peak: %.1lf GFLOPS\n", GPU_NAME, peak); break;
+    //         case 2: printf("## myGEMM.cu on '%s', peak: %.1lf GFLOPS\n", GPU_NAME, peak); break;
+    //         case 3: printf("## myGEMM.cl on '%s', peak: %.1lf GFLOPS\n", GPU_NAME, peak); break;
+    //     }
+    // }
 
     // Loop over the different input/output matrix sizes
     for (int size=MINSIZE; size<=MAXSIZE; size=size*2) {
@@ -62,8 +62,9 @@ int main(int argc, char* argv[]) {
         const int k = size;
         const int m = size;
         const int n = size;
-        printf("##\n");
-        printf("## --- %dx%dx%d ---\n", k, m, n);
+        // printf("##\n");
+        // printf("## --- %dx%dx%d ---\n", k, m, n);
+	printf("matrix_size = %d\n", m);
 
         // Allocate memory for the matrices and fill the inputs with random numbers
         float* A = (float*)malloc(m*k*sizeof(float*));
@@ -105,7 +106,7 @@ int main(int argc, char* argv[]) {
                 case 2: sprintf(name, "myGEMM.cu"); break;
                 case 3: sprintf(name, "myGEMM.cl"); break;
             }
-	    // if (c == 1) continue;
+	    if (c == 1) continue;
 	    // if (c == 3) continue;
 
             // Perform the matrix-multiplication
@@ -132,8 +133,10 @@ int main(int argc, char* argv[]) {
             double seconds = wtime(timers[c]);
             double performance = gflops(timers[c]);
             double fraction = 100.0 * performance / peak;
-            printf("## [%9s] %6.3lf s --> %6.1lf GFLOPS (%2.0lf%%), L2 norm: %.2e\n",
-                   name, seconds, performance, fraction, L2norm);
+            // printf("## [%9s] %6.3lf s --> %6.1lf GFLOPS (%2.0lf%%), L2 norm: %.2e\n",
+            //        name, seconds, performance, fraction, L2norm);
+            printf("%6.3lf; %6.1lf; %.2e\n",
+                   seconds, performance, L2norm);
         }
 
         // Free up the matrices
@@ -144,8 +147,8 @@ int main(int argc, char* argv[]) {
     }
 
     // End of the program
-    printf("##\n");
-    printf("\n");
+    // printf("##\n");
+    printf("\n\n");
     return 0;
 }
 

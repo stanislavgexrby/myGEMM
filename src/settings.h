@@ -23,7 +23,10 @@
 // #define KERNEL 7
 
 // Constants for kernels 1 -- 5
-#define TS 16                        // The square-root of the 2D tile-size (== work-group dims)
+#ifndef TS
+#error "TS isnt defined"
+#endif
+// #define TS 16                        // The square-root of the 2D tile-size (== work-group dims)
 
 // Constants for kernels 3, 5
 #define WPT 8                        // The amount of work-per-thread, i.e. the thread-coarsening factor
@@ -37,8 +40,17 @@
 #define LPT ((TSDK*WPT)/(TS))        // The amount of loads-per-thread (assume TSN==TSM)
 
 // Constants for kernels 6 -- 10
-#define TSM 32                      // The tile-size in dimension M
-#define TSN 32                      // The tile-size in dimension N
+
+#ifndef TSM
+#error "TSM isnt defined"
+#endif
+
+#ifndef TSN
+#error "TSN isnt defined"
+#endif
+
+// #define TSM 32                      // The tile-size in dimension M
+// #define TSN 32                      // The tile-size in dimension N
 #define TSK 16                       // The tile-size in dimension K
 #define WPTM 8                       // The amount of work-per-thread in dimension M
 #define WPTN 8                       // The amount of work-per-thread in dimension N

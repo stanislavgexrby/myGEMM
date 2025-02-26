@@ -48,6 +48,15 @@ endif
 KERNEL ?= 8
 DEFINES+=-DKERNEL=$(KERNEL)
 
+TS ?= 32
+DEFINES+=-DTS=$(TS)
+
+TSM ?= 128
+DEFINES+=-DTSM=$(TSM)
+
+TSN ?= 128
+DEFINES+=-DTSN=$(TSN)
+
 # Load OpenCL and the clBlas library
 INCLUDES += -I$(OPENCLDIR)/include -I$(CLBLASDIR)/include
 LDFLAGS += -L$(OPENCLDIR)/lib64 -L$(CLBLASDIR)/lib64
