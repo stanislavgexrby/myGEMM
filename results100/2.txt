@@ -1,0 +1,690 @@
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.859;    1.2; 2.62e+05
+
+
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.879;    1.1; 2.62e+05
+
+
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.869;    1.1; 2.62e+05
+
+
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.937;    1.1; 2.63e+05
+
+
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.879;    1.1; 2.62e+05
+
+
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.873;    1.1; 2.63e+05
+
+
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.901;    1.1; 2.62e+05
+
+
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.843;    1.2; 2.62e+05
+
+
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.892;    1.1; 2.62e+05
+
+
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.877;    1.1; 2.62e+05
+
+
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.818;    1.2; 2.62e+05
+
+
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.878;    1.1; 2.62e+05
+
+
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.909;    1.1; 2.62e+05
+
+
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.902;    1.1; 2.62e+05
+
+
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.871;    1.1; 2.62e+05
+
+
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.870;    1.1; 2.62e+05
+
+
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.881;    1.1; 2.62e+05
+
+
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.909;    1.1; 2.62e+05
+
+
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.906;    1.1; 2.62e+05
+
+
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.843;    1.2; 2.62e+05
+
+
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.823;    1.2; 2.62e+05
+
+
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.845;    1.2; 2.62e+05
+
+
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.881;    1.1; 2.62e+05
+
+
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.886;    1.1; 2.62e+05
+
+
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.846;    1.2; 2.62e+05
+
+
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.868;    1.1; 2.62e+05
+
+
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.851;    1.2; 2.63e+05
+
+
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.871;    1.1; 2.62e+05
+
+
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.875;    1.1; 2.62e+05
+
+
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 8, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.894;    1.1; 2.62e+05
+
+
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.103;    1.9; 2.62e+05
+
+
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.116;    1.9; 2.62e+05
+
+
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.111;    1.9; 2.62e+05
+
+
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.111;    1.9; 2.62e+05
+
+
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.123;    1.9; 2.62e+05
+
+
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.112;    1.9; 2.62e+05
+
+
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.104;    1.9; 2.62e+05
+
+
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.108;    1.9; 2.62e+05
+
+
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.109;    1.9; 2.62e+05
+
+
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 32, TSN = 32
+matrix_size = 1024
+ 1.104;    1.9; 2.62e+05
+
+
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.096;    2.0; 2.62e+05
+
+
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.116;    1.9; 2.62e+05
+
+
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.122;    1.9; 2.63e+05
+
+
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.106;    1.9; 2.62e+05
+
+
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.111;    1.9; 2.62e+05
+
+
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.105;    1.9; 2.62e+05
+
+
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.107;    1.9; 2.62e+05
+
+
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.109;    1.9; 2.62e+05
+
+
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.113;    1.9; 2.62e+05
+
+
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 64, TSN = 64
+matrix_size = 1024
+ 1.102;    1.9; 2.62e+05
+
+
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.101;    2.0; 2.62e+05
+
+
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.105;    1.9; 2.62e+05
+
+
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.093;    2.0; 2.62e+05
+
+
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.108;    1.9; 2.62e+05
+
+
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.110;    1.9; 2.62e+05
+
+
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.107;    1.9; 2.62e+05
+
+
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.115;    1.9; 2.62e+05
+
+
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.110;    1.9; 2.62e+05
+
+
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.118;    1.9; 2.62e+05
+
+
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 16, TSM = 128, TSN = 128
+matrix_size = 1024
+ 1.090;    2.0; 2.62e+05
+
+
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 32, TSN = 32
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 64, TSN = 64
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 1
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 2
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 3
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 4
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 5
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 6
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 7
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 8
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 9
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1
+==============================================
+test 10
+./bin/myGEMM
+KERNEL = 2, TS = 32, TSM = 128, TSN = 128
+matrix_size = 1024
+-- Error at 274:  Invalid work group size
+make: *** [Makefile:114: run] Error 1

@@ -9,7 +9,7 @@ do
 	do
 		for tsm in ${TSM_ARRAY[*]}
 		do
-			for (( num=1; num<=1; num++ ))
+			for (( num=1; num<=10; num++ ))
 			do
 
 				make clean
